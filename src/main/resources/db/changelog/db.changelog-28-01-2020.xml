@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet author="nevor.nevor" id="create-user-sequence">
+        <createSequence minValue="1"
+                        schemaName="public"
+                        sequenceName="USER_SEQ_ID"/>
+    </changeSet>
+
+    <changeSet author="nevor.nevor" id="create-users-table">
+        <createTable tableName="USER">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="EMAIL" type="VARCHAR(320)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="USERNAME" type="VARCHAR(15)">
+                <constraints nullable="false" unique="false"/>
+            </column>
+            <!--SHA-512-->
+            <column name="PASSWORD" type="CHAR(128)">
+                <constraints nullable="false" unique="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
