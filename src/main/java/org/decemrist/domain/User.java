@@ -1,12 +1,17 @@
 package org.decemrist.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 @Entity
 public class User {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_id_generator")
+	@SequenceGenerator(name="user_id_generator", sequenceName = "USER_SEQ_ID", allocationSize = 1)
 	private Long id;
 	private String email;
 	private String username;
