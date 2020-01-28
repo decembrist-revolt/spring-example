@@ -2,16 +2,15 @@ package org.decemrist.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 public class User {
 
 	@Id
-	public Long id;
-	public String email;
-	public String username;
-	public String password;
+	private Long id;
+	private String email;
+	private String username;
+	private String password;
 
 	public Long getId() {
 		return id;
