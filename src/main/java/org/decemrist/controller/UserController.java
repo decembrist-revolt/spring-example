@@ -1,7 +1,9 @@
 package org.decemrist.controller;
 
+import org.decembrist.HelloKotlin;
 import org.decemrist.dto.UserDto;
 import org.decemrist.service.UserService;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,4 +25,8 @@ public class UserController {
 		return userService.findAll();
 	}
 
+	@GetMapping("/kotlin")
+	public String helloKotlin() {
+		return new HelloKotlin().helloKotlin();
+	}
 }
