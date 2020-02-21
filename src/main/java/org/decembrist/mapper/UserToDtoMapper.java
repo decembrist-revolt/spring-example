@@ -1,8 +1,7 @@
-package org.decemrist.mapper;
+package org.decembrist.mapper;
 
-import org.decemrist.domain.User;
-import org.decemrist.dto.UserDto;
-import org.springframework.stereotype.Component;
+import org.decembrist.domain.User;
+import org.decembrist.dto.UserDto;
 import org.springframework.stereotype.Service;
 
 //@Component

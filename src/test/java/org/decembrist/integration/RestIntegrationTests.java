@@ -1,7 +1,7 @@
-package org.decemrist.integration;
+package org.decembrist.integration;
 
-import org.decemrist.domain.User;
-import org.decemrist.repository.UserRepository;
+import org.decembrist.domain.User;
+import org.decembrist.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

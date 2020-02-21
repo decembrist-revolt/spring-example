@@ -1,8 +1,7 @@
-package org.decemrist.controller;
+package org.decembrist.controller;
 
-import org.decembrist.HelloKotlin;
-import org.decemrist.dto.UserDto;
-import org.decemrist.service.UserService;
+import org.decembrist.dto.UserDto;
+import org.decembrist.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -27,6 +26,6 @@ public class UserController {
 
 	@GetMapping("/kotlin")
 	public String helloKotlin() {
-		return new HelloKotlin().helloKotlin();
+		return "NO KOTLIEN";
 	}
 }

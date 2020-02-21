@@ -1,4 +1,4 @@
-package org.decemrist.mapper;
+package org.decembrist.mapper;
 
 import java.util.Collection;
 import java.util.List;

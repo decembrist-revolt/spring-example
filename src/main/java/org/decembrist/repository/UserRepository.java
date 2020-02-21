@@ -1,6 +1,6 @@
-package org.decemrist.repository;
+package org.decembrist.repository;
 
-import org.decemrist.domain.User;
+import org.decembrist.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

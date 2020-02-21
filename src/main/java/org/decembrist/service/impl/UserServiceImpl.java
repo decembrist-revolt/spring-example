@@ -1,9 +1,9 @@
-package org.decemrist.service.impl;
+package org.decembrist.service.impl;
 
-import org.decemrist.dto.UserDto;
-import org.decemrist.mapper.UserToDtoMapper;
-import org.decemrist.repository.UserRepository;
-import org.decemrist.service.UserService;
+import org.decembrist.dto.UserDto;
+import org.decembrist.mapper.UserToDtoMapper;
+import org.decembrist.repository.UserRepository;
+import org.decembrist.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

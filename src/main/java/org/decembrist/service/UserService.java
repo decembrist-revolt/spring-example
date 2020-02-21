@@ -1,6 +1,6 @@
-package org.decemrist.service;
+package org.decembrist.service;
 
-import org.decemrist.dto.UserDto;
+import org.decembrist.dto.UserDto;
 
 import java.util.List;
 

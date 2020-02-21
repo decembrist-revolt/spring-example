@@ -1,4 +1,4 @@
-package org.decemrist.dto;
+package org.decembrist.dto;
 
 /**
  * DTO for user entity

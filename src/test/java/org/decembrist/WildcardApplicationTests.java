@@ -1,4 +1,4 @@
-package org.decemrist;
+package org.decembrist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

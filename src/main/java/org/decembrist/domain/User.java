@@ -1,4 +1,4 @@
-package org.decemrist.domain;
+package org.decembrist.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
