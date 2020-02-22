@@ -9,14 +9,9 @@ import org.springframework.stereotype.Service
 class UserToDtoMapper : Mapper<User?, UserDto?> {
 
     override fun map(source: User?): UserDto? {
-        if (source == null) {
-            return null
+        return source?.let { user ->
+            UserDto(user.id, user.email, user.username)
         }
-        val userDto = UserDto()
-        userDto.id = source.id
-        userDto.email = source.email
-        userDto.name = source.username
-        return userDto
     }
 
 }
